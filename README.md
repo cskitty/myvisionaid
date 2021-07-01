@@ -1,34 +1,67 @@
-For details: https://medium.com/@shaqian629/real-time-object-detection-in-flutter-b31c7ff9ef96
+F# App for Object Detection, Voice Recognition, TTS using Flutter, TF Lite
 
-# flutter_realtime_detection
+## Install flutter
 
-Real-time object detection in Flutter using [camera](https://pub.dartlang.org/packages/camera) and [tflite](https://pub.dartlang.org/packages/tflite) plugin. 
+git clone https://github.com/flutter/flutter.git -b stable  
+cd flutter  
+flutter --version  
+flutter precache
 
-## Install 
+## Install
 
 ```
 flutter packages get
 ```
 
-## Run
+## Install cocoapods
 
 ```
-flutter run
+sudo gem install cocoapods
+gem which cocoapods
+
 ```
+
+## Check flutter environment
+
+```
+flutter docter
+
+```
+
+## Set up the library
+
+```
+flutter packages get
+
+```
+
+## Compile and install app on iPhone
+
+```
+ flutter run --release
+
+```
+
+## Install and Debug
+
+open visual studio code  
+install flutter plugin  
+open visual_aid directory  
+open lib/main.dart, click the run to install on iphone
+
+## iPhone Setup
+
+Open ios/Runner.xcworkspace in XCode
+Runner->Targets->Signing&Capabilities
+Select your personal team
+Change Bundle Indentifier to yours
+
+## Accept the iPhone Developer Profile
+
+General->Device Management->Accept developer
 
 ## Models
-
-- Image Classification
-  - MobileNet
 
 - Object Detection
   - SSD MobileNet
   - Yolov2 Tiny
-
-- Pose Estimation 
-  - PoseNet
-
-## Previews
-
-![](preview.jpg) 
-
