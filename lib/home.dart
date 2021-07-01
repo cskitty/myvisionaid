@@ -37,17 +37,6 @@ class _HomePageState extends State<HomePage> {
         );
         break;
 
-      case mobilenet:
-        res = await Tflite.loadModel(
-            model: "assets/mobilenet_v1_1.0_224.tflite",
-            labels: "assets/mobilenet_v1_1.0_224.txt");
-        break;
-
-      case posenet:
-        res = await Tflite.loadModel(
-            model: "assets/posenet_mv1_075_float_from_checkpoints.tflite");
-        break;
-
       default:
         res = await Tflite.loadModel(
             model: "assets/ssd_mobilenet.tflite",

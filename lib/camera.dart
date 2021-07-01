@@ -57,8 +57,7 @@ class _CameraState extends State<Camera> {
             ).then((recognitions) {
               int endTime = new DateTime.now().millisecondsSinceEpoch;
               Size previewSize = controller.value.previewSize;
-              print(
-                  "Camera preview Size  ${previewSize.width} * ${previewSize.height}");
+              //print( "Camera preview Size  ${previewSize.width} * ${previewSize.height}");
               print(
                   "Detection took ${endTime - startTime}, ${img.height}*${img.width}");
 
